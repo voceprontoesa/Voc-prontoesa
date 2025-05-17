@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Curso ESA 2025 - Sua Aprovação Começa Aqui</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #0B0F0A; /* fundo dark militar */
+      color: #F1F1F1;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    header h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.6rem;
+      color: #FFD700; /* dourado militar */
+      margin-bottom: 10px;
+      line-height: 1.2;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #cccccc;
+      font-style: italic;
+    }
+
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      margin: 30px 0;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 20px #1d3f1d;
+    }
+
+    /* Estilos do iframe para preencher o container */
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: none;
+      pointer-events: none; /* desativa interação */
+    }
+
+    /* Overlay para ativar o som */
+    #muteOverlay {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      color: #FFD700;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      user-select: none;
+      border-radius: 12px;
+      z-index: 10;
+    }
+
+    .btn-primary {
+      background-color: #1B3A1A; /* verde escuro fosco */
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1.4rem;
+      padding: 16px 40px;
+      border-radius: 10px;
+      text-align: center;
+      display: block;
+      max-width: 320px;
+      margin: 30px auto;
+      text-decoration: none;
+      box-shadow: 0 6px 0 #133013;
+      transition: background-color 0.3s ease;
+    }
+    .btn-primary:hover {
+      background-color: #2E5932;
+    }
+
+    section {
+      background-color: #121212;
+      padding: 30px;
+      border-radius: 10px;
+      margin-bottom: 40px;
+    }
+    section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
+      color: #FFD700;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #2E8B57;
+      padding-bottom: 6px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 15px;
+      font-size: 1.2rem;
+    }
+    ul li::before {
+      content: '✔';
+      position: absolute;
+      left: 0;
+      color: #FFD700;
+      font-weight: bold;
+    }
+    ol {
+      padding-left: 20px;
+      color: #EFEFEF;
+    }
+    ol li {
+      margin-bottom: 15px;
+      font-size: 1.2rem;
+    }
+
+    .faq dt {
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-top: 20px;
+      cursor: pointer;
+      color: #FFD700;
+    }
+    .faq dd {
+      margin-left: 0;
+      margin-bottom: 20px;
+      display: none;
+      color: #DCDCDC;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #aaa;
+      margin-top: 50px;
+      border-top: 1px solid #333;
+      padding-top: 20px;
+    }
+
+    @media(max-width: 640px) {
+      header h1 {
+        font-size: 1.8rem;
+        line-height: 1.3;
+      }
+      section h2 {
+        font-size: 1.5rem;
+      }
+      .btn-primary {
+        font-size: 1.2rem;
+        padding: 12px 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>A ESA VEM AÍ<br>SEU TREINAMENTO COMEÇA AQUI</h1>
+      <p>Sua missão é passar. A nossa é te preparar.</p>
+    </header>
+
+    <div class="video-wrapper" id="videoWrapper">
+      <iframe
+        id="vslVideo"
+        src="https://www.youtube.com/embed/yjTJQ4leB-E?autoplay=1&mute=1&controls=0&rel=0&modestbranding=1&disablekb=1&fs=0"
+        title="VSL Curso ESA"
+        allow="autoplay"
+        allowfullscreen
+      ></iframe>
+      <div id="muteOverlay">Clique para ativar o som</div>
+    </div>
+
+    <a href="https://pay.cakto.com.br/arbsa3q_373972" class="btn-primary" target="_blank">QUERO ME INSCREVER POR R$29,90</a>
+
+    <section>
+      <h2>Por que esse curso é ideal pra você?</h2>
+      <ul>
+        <li>Conteúdo direto do edital ESA 2025</li>
+        <li>Ebook completo e atualizado</li>
+        <li>Bônus com vídeo aulas e simulados</li>
+        <li>Material de apoio para acelerar sua preparação</li>
+        <li>Preço acessível: só R$29,90</li>
+        <li>Acesso imediato e vitalício</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Você vai receber:</h2>
+      <ul>
+        <li>Ebook com teoria e exercícios</li>
+        <li>Vídeo aulas bônus explicativas</li>
+        <li>Mapas mentais e resumos PDF</li>
+        <li>Grupo de apoio (opcional)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Como funciona:</h2>
+      <ol>
+        <li>Você se inscreve clicando no botão</li>
+        <li>Recebe acesso por e-mail imediatamente</li>
+        <li>Estuda no seu tempo, do seu jeito</li>
+        <li>Segue o cronograma e materiais propostos</li>
+        <li>Chega com tudo no dia da prova</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Garantia Total</h2>
+      <p>Você tem 7 dias para testar o curso. Se não gostar, devolvemos 100% do valor. Sem letras miúdas.</p>
+    </section>
+
+    <section>
+      <h2>Oferta Limitada</h2>
+      <p style="font-size: 1.3rem;"><del>De R$49,90</del> por <strong style="color:#FFD700;">R$29,90</strong> à vista ou em até 12x.</p>
+      <a href="https://pay.cakto.com.br/arbsa3q_373972" class="btn-primary" target="_blank">GARANTIR AGORA</a>
+    </section>
+
+    <section class="faq">
+      <h2>Dúvidas Frequentes</h2>
+      <dl>
+        <dt onclick="toggleFaq(this)">Funciona no celular?</dt>
+        <dd>Sim, o curso é 100% online e responsivo para qualquer aparelho.</dd>
+
+        <dt onclick="toggleFaq(this)">E se eu não gostar?</dt>
+        <dd>Você pode pedir reembolso em até 7 dias após a compra.</dd>
+
+        <dt onclick="toggleFaq(this)">Tem suporte?</dt>
+        <dd>Sim, oferecemos suporte básico por e-mail e grupo de alunos.</dd>
+      </dl>
+    </section>
+
+    <footer>
+      <p>© 2025 Curso ESA Preparatório. Todos os direitos reservados.</p>
+    </footer>
+  </div>
+
+  <script>
+    function toggleFaq(el) {
+      const dd = el.nextElementSibling;
+      dd.style.display = dd.style.display === 'block' ? 'none' : 'block';
+    }
+
+    const iframe = document.getElementById('vslVideo');
+    const overlay = document.getElementById('muteOverlay');
+
+    overlay.addEventListener('click', () => {
+      const src = iframe.src;
+      iframe.src = src.replace('mute=1', 'mute=0');
+      overlay.style.display = 'none';
+    });
+  </script>
+</body>
+</html>
